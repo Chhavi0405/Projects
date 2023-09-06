@@ -6,7 +6,6 @@ import { CgSpinner } from "react-icons/cg";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import { toast, Toaster } from "react-hot-toast";
-// import { RecaptchaVerifier, } from "firebase/auth";
 import { auth } from "./firebase.config";
 import { getAuth, RecaptchaVerifier , signInWithPhoneNumber} from "firebase/auth";
 export default function Home() {
@@ -18,25 +17,15 @@ export default function Home() {
   const [user, setUser] = useState(null);
   function onCaptchVerify() {
     const auth = getAuth();
-    if (!window.recaptchaVerifier) {
-      // window.recaptchaVerifier = new RecaptchaVerifier(
-      //   "recaptcha-container",
-      //   {
-      //     size: "invisible",
-      //     callback: (response:any) => {
-      //       onSignup();
-      //     },
-      //     "expired-callback": () => {},
-      //   },
-      //   auth
-      // );
-     
+    if (!window.recaptchaVerifier ) {
       window.recaptchaVerifier = new RecaptchaVerifier(auth, 'recaptcha-container', {
         'size': 'invisible',
         'callback': (response:any) => {
                 onSignup();
         },
-        'expired-callback': () => {}
+        'expired-callback': () => {
+          
+        }
       });
   }
   }

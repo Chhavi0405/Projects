@@ -2,10 +2,12 @@
 <h1>OTP-Firebase</h1>
 <hr/>
 <h3>Install Dependencies</h3>
-<p>In the project directory, you can run:</p>
+<p>To install all the required dependencies</p>
+
 <p>npm install</p>
 <br/>
 <h3>Run Project</h3>
+
 <p>In the project directory, you can run:</p>
 <p>npm run dev</p>
 <p>Runs the app in the development mode.</p>

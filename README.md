@@ -23,11 +23,15 @@
   <ul>
     <li>Next.js – React framework for building performant apps with the best developer experience.</li>
   </ul>
-
-
+  
 <br/>
+
 <h3>UI</h3>
 
   <ul>
     <li>Tailwind CSS – Utility-first CSS framework for rapid UI development</li>
   </ul>
+<br/>
+<h3>Hooks and Utilities</h3>
+<br/>
+<h3>Code Quality</h3>

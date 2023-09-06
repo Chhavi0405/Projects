@@ -17,3 +17,17 @@
 <p>You can learn more in the Create React App documentation.</p>
 
 <p>To learn React, check out the React documentation.</p>
+
+<h3>Dependencies</h3>
+
+  <ul>
+    <li>Next.js – React framework for building performant apps with the best developer experience.</li>
+  </ul>
+
+
+<br/>
+<h3>UI</h3>
+
+  <ul>
+    <li>Tailwind CSS – Utility-first CSS framework for rapid UI development</li>
+  </ul>

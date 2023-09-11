@@ -5,9 +5,10 @@ import './App.css';
 
 import React from 'react'
 import {Cloudinary} from "@cloudinary/url-gen";
-import {AdvancedImage,  responsive} from '@cloudinary/react';
-// Import any actions required for transformations.
 import {fill} from "@cloudinary/url-gen/actions/resize";
+import {compass,Gravity} from "@cloudinary/url-gen/qualifiers/gravity";
+import {AdvancedImage,  responsive,accessibility} from '@cloudinary/react';
+// Import any actions required for transformations.
 
 const App = () => {
 
@@ -27,26 +28,28 @@ const App = () => {
   //===================
 
   // Instantiate a CloudinaryImage object for the image with the public ID, 'docs/models'.
-  const myImage = cld.image('di38d1n6d1'); 
-
-
+  // const myImage = cld.image('di38d1n6d1'); 
+  const myImage = cld.image('samples/animals/three-dogs'); 
+ 
   // 4. Transform your image
   //=========================
 
   // Resize to 250 x 250 pixels using the 'fill' crop mode.
-  // myImage.resize(fill().width(200).height(250));
+  // myImage.resize(fill().height(400));
 
 
   // 5. Deliver your image
-  // =========================
+  // ={display:'block',marginLeft:'auto',marginRight:'auto',marginTop:'30 px'========================
 
   // Render the image in a React component.
   return (
     <div className="App-body">
-      <h1>React Quick Start</h1>
-      <div>
-      <AdvancedImage cldImg={myImage} plugins={[responsive({steps: [800, 1000, 1400]})]} />
+      {/* <h1>React Quick Start</h1> */}
+      <div >
+        <br/>
+      <AdvancedImage style={{display:'block',marginLeft:'auto',marginRight:'auto'}}  cldImg={myImage} plugins={[responsive({steps: [1200]}),accessibility()]} />
       </div>
+      {/* <img  sizes='100vw' src='https://res.cloudinary.com/di38d1n6d/image/upload//c_thumb,w_720,g_auto/v1694174681/lqaauhiojsiatimaape4.jpg' alt='tiger'/> */}
     </div>
   )
 

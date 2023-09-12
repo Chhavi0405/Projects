@@ -47,7 +47,7 @@ const App = () => {
       {/* <h1>React Quick Start</h1> */}
       <div >
         <br/>
-      <AdvancedImage style={{display:'block',marginLeft:'auto',marginRight:'auto'}}  cldImg={myImage} plugins={[responsive({steps: [1200]}),accessibility()]} />
+      <AdvancedImage style={{display:'block',marginLeft:'auto',marginRight:'auto'}}  cldImg={myImage} plugins={[responsive({steps: [1200]})]} />
       </div>
       {/* <img  sizes='100vw' src='https://res.cloudinary.com/di38d1n6d/image/upload//c_thumb,w_720,g_auto/v1694174681/lqaauhiojsiatimaape4.jpg' alt='tiger'/> */}
     </div>

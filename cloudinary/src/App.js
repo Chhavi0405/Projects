@@ -2,11 +2,11 @@
 import './App.css';
 import {useState} from "react"
 
-import {fill} from "@cloudinary/url-gen/actions/resize";
+
 function App() {
   const[image,setImage] = useState();
   const[url,setUrl] = useState();
-  const [size,setSize]= useState()
+
 
   const handleImage=(e)=>{
     console.log(e,"images")
@@ -22,7 +22,7 @@ body: data
 .then(resp => resp.json())
 
 .then(data => {
-// setSize(data.resize(fill().width(250).height(250)))
+
 setUrl(data.url)
 console.log(data.url,"url",data.height,data.width)
 })
@@ -37,11 +37,11 @@ console.log(data.url,"url",data.height,data.width)
     <br/>
     <br/>
     <button onClick={handleImage}>Upload</button>
-    {/* <AdvancedImage  /> */}
+
   </div>
   <div>
     <h3>Upload image will be displayed here</h3>
-   <img src={url} alt='image' />
+   <img src={url} alt='pics' />
   </div>
                 
    </>

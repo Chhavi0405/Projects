@@ -1,0 +1,24 @@
+{
+  "navbar":{
+    "home":"home",
+    "about":"about",
+    "contact":"contact"
+  },
+  "homepage":{
+    "welcome-message":" welcome to Next-js",
+    "topic":"topic getting covered :i18n",
+    "client-side-component":"only  328 subs" ,
+    "tab-title-home":"Homepage"
+    },
+    "about":{
+      "title":"This is About Page",
+      "tab-title-about":"About"
+    },
+    "contact":{
+      "title":"This is Contact Page",
+      "tab-title-contact":"Contact"
+    },
+    "footer":{
+      "description":"This is Footer"
+    }
+}

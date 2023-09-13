@@ -3,6 +3,10 @@
         "title": "Hello World!"
       },
       "Title":{
-        "word":"Good Morning"
+        "word":"Good Morning -en"
+      },
+      "LocaleSwitcher": {
+        "label": "Change language",
+        "locale": "{locale, select, de {German} en {English} other {Unknown}}"
       }
 }

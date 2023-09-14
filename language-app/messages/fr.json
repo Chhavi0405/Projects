@@ -1,0 +1,24 @@
+{
+  "navbar":{
+    "home":"maison",
+    "about":"À propos",
+    "contact":"contact"
+  },
+  "homepage":{
+    "welcome-message":"bienvenue sur Next-js",
+    "topic":"sujet abordé :i18n",
+    "client-side-component":"seulement 328 abonnés" ,
+    "tab-title-home":"Page d'accueil"
+    },
+    "about":{
+      "title":"Ceci est la page À propos",
+      "tab-title-about":"À propos"
+    },
+    "contact":{
+      "title":"Ceci est la page de contact",
+      "tab-title-contact":"Contact"
+    },
+    "footer":{
+      "description":"Ceci est le pied de page"
+    }
+}

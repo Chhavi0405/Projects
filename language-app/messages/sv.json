@@ -1,0 +1,24 @@
+{
+  "navbar":{
+    "home":"Hem",
+    "about":"Handla om",
+    "contact":"Kontakt"
+  },
+  "homepage":{
+    "welcome-message":" välkommen till Next-js",
+    "topic":"ämne som tas upp :i18n",
+    "client-side-component":"endast 328 subs" ,
+    "tab-title-home":"Hemsida"
+    },
+    "about":{
+      "title":"Det här är About Page",
+      "tab-title-about":"Handla om"
+    },
+    "contact":{
+      "title":"Det här är kontaktsidan",
+      "tab-title-contact":"Kontakt"
+    },
+    "footer":{
+      "description":"Det här är Footer"
+    }
+}

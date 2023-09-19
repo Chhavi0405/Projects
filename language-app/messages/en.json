@@ -20,5 +20,8 @@
     },
     "footer":{
       "description":"This is Footer"
+    },
+    "date-time":{
+      "date":""
     }
 }

@@ -3,7 +3,8 @@
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname, useRouter } from "next-intl/client";
 import AboutPage from "./about/page";
-
+import {useState} from 'react'
+import moment from "moment";
 export default function Index() {
   const t = useTranslations("LocaleSwitcher");
 
@@ -15,21 +16,27 @@ export default function Index() {
     const nextLocale = event.target.value;
     router.replace(pathname, { locale: nextLocale });
   }
-
+ 
+  var q= moment().subtract(6, 'days').calendar();
+  console.log(q,"q")
   return (
     <>
       <label>choose language</label>
       <br />
 
       <select
-      //  defaultValue={locale}
+       defaultValue={locale}
       onChange={onSelectChange}>
         {["en", "de"].map((cur: any) => (
           <option key={cur} value={cur}>
             {t("locale", { locale: cur })}
+           
           </option>
         ))}
       </select>
+
+
+      
 
       <AboutPage/>
     </>
